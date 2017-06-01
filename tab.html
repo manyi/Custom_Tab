@@ -1,0 +1,59 @@
+@@ -1,57 +0,0 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab选项卡</title>
+	<link rel="stylesheet" type="text/css" href="css/tab.css">
+
+</head>
+<body>
+	<div class="tab" data-config='{
+					"triggerType":"mouseover",
+					"effect":"default",
+					"invoke":"3",
+					"auto":1000
+					}'>
+		<ul class="tab_Ul">
+			<li  class="active"><a href="javascript:void(0)" >摄影</a></li>
+			<li><a href="javascript:void(0)">运动</a></li>
+			<li><a href="javascript:void(0)">健身</a></li>
+			<li><a href="javascript:void(0)">电影</a></li>
+		</ul>
+		<div class="tab_content">	
+			<div class="content_item current"><img src="imgbox/2.jpg" width="300" height="200"></div>
+			<div class="content_item"><img src="imgbox/3.jpg" width="300" height="200"></div>
+			<div class="content_item "><img src="imgbox/4.jpg" width="300" height="200"></div>
+			<div class="content_item "><img src="imgbox/5.jpg" width="300" height="200"></div>
+		</div>
+	</div>  
+	<div class="tab" data-config='{
+					"triggerType":"mouseover",
+					"effect":"fade",
+					"invoke":"1",
+					"auto":1000
+					}'>
+		<ul class="tab_Ul">
+			<li  class="active"><a href="javascript:void(0)" >摄影</a></li>
+			<li><a href="javascript:void(0)">运动</a></li>
+			<li><a href="javascript:void(0)">健身</a></li>
+			<li><a href="javascript:void(0)">电影</a></li>
+		</ul>
+		<div class="tab_content">	
+			<div class="content_item current"><img src="imgbox/2.jpg" width="300" height="200"></div>
+			<div class="content_item"><img src="imgbox/3.jpg" width="300" height="200"></div>
+			<div class="content_item "><img src="imgbox/4.jpg" width="300" height="200"></div>
+			<div class="content_item "><img src="imgbox/5.jpg" width="300" height="200"></div>
+		</div>
+	</div>  
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// Tab.init($(".tab")) 
+		$(".tab").tab();
+	})
+</script>
+</html>
+\ No newline at end of file
